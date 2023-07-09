@@ -3,8 +3,10 @@ package kr.ac.jbnu.rice.havemeal.model;
 public class GlobalStorage {
     private static GlobalStorage globalStorage = null;
 
-    private GlobalStorage() {
+    private String userID;
 
+    private GlobalStorage() {
+        this.userID = "";
     }
 
     public static GlobalStorage getInstance() {
@@ -15,4 +17,11 @@ public class GlobalStorage {
         return globalStorage;
     }
 
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
 }

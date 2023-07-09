@@ -47,6 +47,11 @@
         <activity android:name=".view.LoginView">
 
         </activity>
+
+        <activity android:name=".view.OpenFreshBagView">
+
+        </activity>
+
     </application>
 
 </manifest>

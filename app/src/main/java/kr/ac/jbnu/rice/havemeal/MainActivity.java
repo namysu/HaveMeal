@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 
 import kr.ac.jbnu.rice.havemeal.view.LoginView;
+import kr.ac.jbnu.rice.havemeal.view.OpenFreshBagView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -70,7 +71,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == LoginView.LOGIN_VIEW_START) {
             if (resultCode == LoginView.LOGIN_VIEW_SUCCESS) {
-
+                Intent openFreshbagIntent = new Intent(getApplicationContext(), OpenFreshBagView.class);
+                startActivityForResult(openFreshbagIntent, OpenFreshBagView.OPEN_FRESH_BAG_VIEW_START);
 
             } else if (resultCode == LoginView.LOGIN_VIEW_CANCEL_USER) {
                 finish();

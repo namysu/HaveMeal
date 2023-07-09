@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/fresh_bag_logo_image_view"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/havemeal_logo" />
+
+    <TextView
+        android:id="@+id/fresh_bag_mac_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fresh_bag_logo_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="User Freshbag MAC"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/fresh_bag_button_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/fresh_bag_recognize_qr_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:text="프레시백 QR 인식"/>
+
+        <Button
+            android:id="@+id/open_fresh_bag_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="프레시백 개방"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
