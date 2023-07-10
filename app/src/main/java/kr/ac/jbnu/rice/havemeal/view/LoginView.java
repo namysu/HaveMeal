@@ -60,6 +60,8 @@ public class LoginView extends AppCompatActivity {
         userLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                globalStorage.setUserID(userInputIDEditText.getText().toString());
+
                 setResult(LOGIN_VIEW_SUCCESS);
                 finish();
             }

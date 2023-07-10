@@ -6,9 +6,10 @@
     <ImageView
         android:id="@+id/fresh_bag_logo_image_view"
         android:layout_width="256dp"
-        android:layout_height="256dp"
-        android:layout_centerInParent="true"
-        android:src="@drawable/havemeal_logo" />
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/deliver_done" />
 
     <TextView
         android:id="@+id/fresh_bag_mac_textview"
@@ -43,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="프레시백 개방"/>
+            android:text="수동 개방"/>
 
     </LinearLayout>
 
